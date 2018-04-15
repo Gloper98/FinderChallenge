@@ -1,0 +1,23 @@
+mixin savedSearch ()
+    ul#saved-list
+        for saveItem in entities.saved 
+            li
+                a(href= saveItem.url)= saveItem.label
+
+mixin categories ()
+    ul#categories-list
+        for category in entities.categories[0]
+            li
+                a(href= category.id)= category.label
+
+mixin lang ()
+    ul#lang-list
+        for language in entities.lang[0]
+            li
+                a(href= language.id)= language.label
+
+mixin edition ()
+    ul#edition-list
+        for editionItem in entities.edition[0]
+            li
+                a(href= editionItem.id)= editionItem.label

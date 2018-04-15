@@ -2,6 +2,7 @@ var gulp = require("gulp");
 var pug = require("gulp-pug");
 var stylus = require("gulp-stylus");
 var rupture = require("rupture");
+var data = require('gulp-data');
 var browserSync = require("browser-sync");
 
 var pathsView = [
@@ -45,6 +46,9 @@ var pathData = [
 
 var taskPugSelf = function(){
     return gulp.src(pathsView)
+        .pipe(data(function(file) {
+            return require("./src/books-schema.json");
+        }))
         .pipe(pug({
             pretty: true
         }))
