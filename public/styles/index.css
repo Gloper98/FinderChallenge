@@ -4,6 +4,9 @@
 .saveSearchLink {
   margin-top: 2em;
 }
+ul {
+  list-style: none;
+}
 .app {
   max-width: 960px;
   margin: 0 auto;
@@ -11,31 +14,32 @@
 .search-form {
   margin-top: 30px;
 }
-.disabled {
-  pointer-events: none;
-  color: #808080;
-  opacity: 0.4;
-}
 .visually-hidden {
   display: none;
-}
-#awesomplete_list_1 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  cursor: pointer;
-  background-color: rgba(232,232,232,0.4);
-}
-#awesomplete_list_1 :hover {
-  background-color: rgba(55,55,55,0.2);
-}
-.awesomplete {
-  display: inline-block;
 }
 .submit {
   position: absolute;
   margin-left: 0.5rem;
+}
+.disabled {
+  pointer-events: none;
+  color: #808080;
+  opacity: 0.5;
+}
+#awesomplete_list_1 {
+  width: 15em;
+  position: absolute;
+  list-style: none;
+  border-radius: 6px;
+  background-color: #fff7e5;
+  color: #333;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  cursor: pointer;
+}
+.awesomplete {
+  display: inline-block;
 }
 @media only screen and (max-width: 650px) {
   .search-form {
