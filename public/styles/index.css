@@ -1,12 +1,41 @@
 * {
   font-family: "Proxima Nova";
 }
+.saveSearchLink {
+  margin-top: 2em;
+}
 .app {
   max-width: 960px;
   margin: 0 auto;
 }
 .search-form {
   margin-top: 30px;
+}
+.disabled {
+  pointer-events: none;
+  color: #808080;
+  opacity: 0.4;
+}
+.visually-hidden {
+  display: none;
+}
+#awesomplete_list_1 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgba(232,232,232,0.4);
+}
+#awesomplete_list_1 :hover {
+  background-color: rgba(55,55,55,0.2);
+}
+.awesomplete {
+  display: inline-block;
+}
+.submit {
+  position: absolute;
+  margin-left: 0.5rem;
 }
 @media only screen and (max-width: 650px) {
   .search-form {
